@@ -1,0 +1,19 @@
+<h2> Edit Calendar </h2>
+
+<div class='form'>
+    <form>
+
+        <p> <label for='name'> Name: </label> </p>
+        <p> {{input value=model.name type='text' id='name'}} </p>
+
+        <p> <label for='notes'> Notes (optional): </label> </p>
+        <p> {{textarea value=model.notes id='notes'}} </p>
+
+        <p>
+            <button class='btn' {{action "save"}}> Save </button>
+            <button class='btn delete' {{action "delete"}}> Delete </button>
+            <button class='btn' {{action "cancel"}}> Cancel </button>
+        </p>
+
+    </form>
+</div>

@@ -1,0 +1,175 @@
+html, body { 
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body > .ember-view {
+    height: 100%;
+}
+
+h1.title a {
+    color: #AFB42B; 
+    text-decoration: none;
+}
+
+.not-current {
+    background: #b6b6b6;
+    color: #727272;
+}
+
+.has-value {
+    background: #CDDC39;
+    color: #212121;
+}
+
+.not-current.has-value {
+    background: #AFB42B;
+}
+
+.col {
+    float: left;
+}
+
+.col-sidebar {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #9e9e9e;
+    box-sizing: border-box;
+}
+
+.col-main {
+    width: 75%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+h1.title {
+    font-size: 200%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    border: 1px solid #b6b6b6;
+}
+
+.num {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.cal-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cal-list li {
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.cal-list li:first-child {
+    border-top: 1px solid #B6B6B6;
+}
+
+.cal-list a {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    color: #212121;
+    text-decoration: none;
+}
+
+.cal-list a:hover {
+    background: #F0F4C3;
+}
+
+.toolbar {
+    padding: 20px 10px;
+}
+
+.btn {
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    color: #212121;
+    padding: 5px 10px;
+    text-decoration: none;
+    background: #fff;
+}
+
+.btn:hover {
+    background: #F0F4C3;
+}
+
+.form {
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+.form textarea, .form input:not([type=checkbox]), .form select {
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    color: #212121;
+    padding: 5px;
+    width: 200px;
+    background: #fff;
+}
+
+.form select {
+    width: 212px;
+}
+
+label.checkbox {
+    width: 250px;
+}
+
+.cal-list .streak {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+
+.notes {
+    font-size: 75%;
+    color: #CDDC39;
+    display: inline-block;
+    margin-left: 10px;
+    letter-spacing: 0.4px;
+}
+
+.cal-list .btn {
+    font-size: 70%;
+    display: inline;
+    padding: 5px 10px;
+}
+
+.cal-list .btn:hover {
+    background: #CDDC39;
+}
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.btn.delete:hover {
+    background: #F44336;
+}

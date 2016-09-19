@@ -1,0 +1,22 @@
+<h1> Calendars </h1>
+
+<div class='toolbar'>
+    {{#link-to "new" class="btn"}} Create Calendar {{/link-to}}
+
+    <a class='btn' {{action 'logout'}}> Log Out </a>
+</div>
+
+<ul class='cal-list'>
+{{#each sortedCalendars as |cal|}}
+    <li>
+        {{#link-to "calendar" cal}}
+            <span class='name'> {{cal.name}} </span>
+            <span class='notes'> {{cal.notes}} </span>
+            <span class='streak'> {{cal.count}} days </span>
+            <span class='streak'>
+                {{#link-to "edit" cal class='btn'}} Edit {{/link-to}}
+            </span>
+        {{/link-to}}
+    </li>
+{{/each}}
+</ul>

@@ -1,0 +1,11 @@
+
+{{#if session.isAuthenticated}}
+
+<p> Logged In </p>
+<p> {{#link-to 'calendars'}} See your calendars {{/link-to}} </p>
+
+{{else}}
+
+<p> {{#link-to 'login'}} Login {{/link-to}} </p>
+
+{{/if}}
